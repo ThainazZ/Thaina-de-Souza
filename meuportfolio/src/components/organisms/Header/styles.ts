@@ -2,11 +2,10 @@ import styled from 'styled-components';
 
 
 export const Box = styled.header `
-    padding-top: 40px;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    gap: 10rem;
 
 
 

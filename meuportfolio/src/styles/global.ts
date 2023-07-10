@@ -19,7 +19,7 @@ html, body {
     height: 100%;
     width: 100%;
     justify-content: center;
-    flex: 1;
+
 }
 
 body {
