@@ -6,6 +6,7 @@ export const Box = styled.header `
     height: 100%;
     display: flex;
     gap: 10rem;
+    align-items: center;
 
 
 

@@ -1,16 +1,47 @@
-import React from 'react';
-import * as S from './styles';
+import React, { useState } from 'react';
+import Select from 'react-select';
+import '../../../styles/variables.css';
 
-export const Select: React.FC = () => {
+const LanguageSelect = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState(null);
 
-    return (
+  const handleLanguageChange = (selectedOption) => {
+    setSelectedLanguage(selectedOption);
+  };
 
-        <S.Select>
-            <option value ="english">EN-US</option>
-            <option value ="portuguese">PT-BR</option>
-        </S.Select>
+  const languageOptions = [
+    { value: 'en', label: 'English' },
+    { value: 'pt', label: 'Portuguese' },
+  ];
 
-    );
-
+  return (
+    <div>
+      <Select
+        value={selectedLanguage}
+        onChange={handleLanguageChange}
+        options={languageOptions}
+        styles={{
+          control: (provided, state) => ({
+            ...provided,
+            width: 152,
+            height: 62,
+            borderColor: state.isFocused ? 'transparent' : 'transparent',
+            borderRadius: 30,
+            outline: 0,
+            background: 'var(--primary-linear)',
+            
+          }),
+          indicatorSeparator: () => ({
+            display: 'none',
+          }),
+          dropdownIndicator: (provided, state) => ({
+            ...provided,
+            transform: state.selectProps.menuIsOpen ? 'rotate(180deg)' : undefined,
+          }),
+        }}
+      />
+    </div>
+  );
 };
 
+export default LanguageSelect;
