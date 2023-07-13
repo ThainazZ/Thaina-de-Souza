@@ -1,4 +1,12 @@
 :root {
 
     --primary-linear: #310a31 linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.12) 100%);
+
+    --primary-color: #FFFFFF;
+
+    --secondary-color: #8f378f;
+
+    --secondary-linear: linear-gradient(270deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+
+
 }

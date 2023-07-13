@@ -10,6 +10,6 @@ function Header() {
         </S.Box>
         
     );
-}
+};
 
 export default Header;

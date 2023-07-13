@@ -1,49 +1,6 @@
-:root {
-
-    --primary-linear: #310a31 linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.12) 100%);
-}
-
-.custom-select {
-    width: 151px;
-    height: 62px;
-    outline: none;
-    border-radius: 30px;
-    text-align: center;
-    background: var(--primary-linear);
-    color:white;
-    font-size: 16px;
-    appearance: none;
-
-}
-
-
-.custom-select::-ms-expand {
-    display: none;
-}
-
-.custom-select::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%) rotate(45deg);
-    width: 6px;
-    height: 6px;
-    border-bottom: 1px solid #333;
-    border-right: 1px solid #333;
-    pointer-events: none;
-  }
-  
-  .custom-select::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 12px;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 4px solid #333;
-    pointer-events: none;
+.LeftCard {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
 }

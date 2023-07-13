@@ -12,6 +12,7 @@ export const ItemList = styled.li`
 display: inline-block;
 font-weight: 300;
 margin-right: 25px;
+font-size: 1.5rem;
 
 
 

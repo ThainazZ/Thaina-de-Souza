@@ -1,5 +1,5 @@
 import * as S from './styles';
-
+import Main from '../../organisms/Main';
 import Header from '../../organisms/Header';
 
 
@@ -10,13 +10,13 @@ type FrontendProps = {
 
 
 const Frontend = ({ children }: FrontendProps) => {
-    return <S.Container>
+    return (
+    <S.Container>
         <Header>
             </Header>
-        <main>
-            {children}
-        </main>
-    </S.Container>;
+        <Main />
+    </S.Container>
+    );
 };
 
 export default Frontend;
