@@ -4,10 +4,10 @@ import '../../../styles/variables.css';
 import './styles.css';
 
 const LanguageSelect = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState('pt');
+  const [selectedLanguage, setSelectedLanguage] = useState<{ value: string; label: string } | null>(null);
 
-  const handleLanguageChange = (selectedOption) => {
-    setSelectedLanguage(selectedOption.value);
+  const handleLanguageChange = (selectedOption: { value: string; label: string } | null) => {
+    setSelectedLanguage(selectedOption || null);
   };
 
   const languageOptions = [
@@ -15,7 +15,7 @@ const LanguageSelect = () => {
     { value: 'pt', label: 'Portuguese' },
   ];
 
-  const getOptionLabel = (option) => {
+  const getOptionLabel = (option: { value: string; label: string }) => {
     return (
       <label
         style={{
@@ -38,7 +38,7 @@ const LanguageSelect = () => {
   return (
     <div>
       <Select
-        value={languageOptions.find((option) => option.value === selectedLanguage)}
+        value={selectedLanguage}
         onChange={handleLanguageChange}
         options={languageOptions}
         getOptionLabel={getOptionLabel}
@@ -53,7 +53,7 @@ const LanguageSelect = () => {
             padding: '5%',
             borderRadius: 30,
             border: state.isFocused ? 0 : 0,
-            boxShadow: state.isFocused ? 0 : 0,
+            boxShadow: state.isFocused ? '0' : '0',
             background: 'var(--primary-linear)',
             '&:hover': {
               border: state.isFocused ? 0 : 0,

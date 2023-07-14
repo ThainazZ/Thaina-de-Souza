@@ -1,7 +1,7 @@
 import * as S from './styles';
-import Main from '../../organisms/Main';
 import Header from '../../organisms/Header';
-
+import Title from '../../atoms/Title';
+import Content from '../../organisms/Content';
 
 //define o front-end a ser puxado pelo App no pages
 type FrontendProps = {
@@ -12,10 +12,15 @@ type FrontendProps = {
 const Frontend = ({ children }: FrontendProps) => {
     return (
     <S.Container>
+        
         <Header>
             </Header>
-        <Main />
+            <Title />
+            <Content />
     </S.Container>
+
+    
+       
     );
 };
 
