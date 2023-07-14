@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
+import { useTranslation } from 'react-i18next';
 import '../../../styles/variables.css';
 import './styles.css';
 
 const LanguageSelect = () => {
+  const { i18n } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = useState<{ value: string; label: string } | null>(null);
 
   const handleLanguageChange = (selectedOption: { value: string; label: string } | null) => {
-    setSelectedLanguage(selectedOption || null);
+    setSelectedLanguage(selectedOption);
+    if (selectedOption) {
+      i18n.changeLanguage(selectedOption.value);
+    }
   };
 
   const languageOptions = [
