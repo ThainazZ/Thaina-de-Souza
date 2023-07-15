@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Select from 'react-select';
 import { useTranslation } from 'react-i18next';
 import '../../../styles/variables.css';
-import './styles.css';
 
 const LanguageSelect = () => {
   const { i18n } = useTranslation();
@@ -20,7 +19,7 @@ const LanguageSelect = () => {
     { value: 'pt', label: 'Portuguese' },
   ];
 
-  const getOptionLabel = (option: { value: string; label: string }) => {
+  const getOptionLabel = (option: OptionTypeBase) => {
     return (
       <label
         style={{
@@ -34,7 +33,9 @@ const LanguageSelect = () => {
           outline: '0',
           cursor: 'pointer',
         }}
-      >
+
+        onClick={() => handleLanguageChange(option)}
+        >
         {option.label}
       </label>
     );
@@ -69,7 +70,7 @@ const LanguageSelect = () => {
           }),
           dropdownIndicator: (provided, state) => ({
             ...provided,
-            transform: state.selectProps.menuIsOpen ? 'rotate(180deg)' : null,
+            transform: state.selectProps.menuIsOpen ? 'rotate(180deg)' : 'none',
             color: state.isFocused ? 'white' : 'white',
             outline: 'none',
           }),

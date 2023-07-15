@@ -12,5 +12,5 @@ i18n
     fallbackLang: 'pt',
 });
 
-i18n.changeLanguage('en');
+i18n.changeLanguage('pt');
 export default i18n;
