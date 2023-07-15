@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/react": "^18.2.15",
     "styled-components": "^6.0.2"
   }
 }

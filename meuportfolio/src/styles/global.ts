@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+import backgroundImage from '../assets/FUNDO.png';
+import styled from 'styled-components';
 
 
 
@@ -13,19 +15,25 @@ const globalStyle = createGlobalStyle `
     box-sizing: border-box;
 }
 
-html, body {
-    background-color: black;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-
-}
-
 body {
     font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(${backgroundImage});
+    background-repeat: none;
 }
 
-`
+#root {
+    
+    
+
+  
+    
+}
+
+`;
 
 export default globalStyle;
