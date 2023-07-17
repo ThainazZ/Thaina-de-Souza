@@ -17,7 +17,7 @@ const RightCard = () => {
                 {t('main.title')}
              </p>
              <div className='Box'
-             style={{width:'200px', height:'250px', display: 'flex', alignItems: 'center', overflow:'hidden', overflowX:'scroll',}}>
+             style={{width:'200px', height:'250px', display: 'flex', alignItems: 'center', overflow:'hidden', overflowX:'scroll', scrollbarWidth: 'none', }}>
 
                <div className='React' style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <img src={reactImage} style={{width: '180px', paddingTop: '5%',}}></img>
@@ -28,7 +28,7 @@ const RightCard = () => {
                 <div className='Type' style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <img src={typeImage} style={{width: '180px', paddingTop: '5%',}}></img>
                 <p style={{width: '200px', textAlign: 'center', paddingTop: '3%',}}>
-                Utilizo em muitos projetos o Typescript;</p>
+                Utilizo em grande parte o Typesc;</p>
                 </div> 
 
 
