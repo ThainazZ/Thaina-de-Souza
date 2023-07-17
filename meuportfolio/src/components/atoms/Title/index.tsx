@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { CSSProperties } from 'react';
 
 
 const Title = () => {
@@ -11,7 +10,7 @@ const Title = () => {
         fontFamily: 'Quicksand',
         fontWeight: 'normal',
         textAlign: 'center',
-        paddingTop: '8rem',
+        paddingTop: '6rem',
         paddingBottom: '3rem',
       
       };

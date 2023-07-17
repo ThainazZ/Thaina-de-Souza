@@ -5,8 +5,9 @@
     },
 
     "main": {
-        
-        "subtitle": "Olá! Sou uma dev front-end com paixão por criar experiências web cativantes."
+        "title": "Tecnologias",
+        "subtitle": "Sou uma dev front-end com paixão por criar experiências web cativantes.",
+        "text": "Eu sempre estive apaixonada pela ideia de transformar tudo em algo extraordinário. Bem-vindo (a)!"
     }
 
 }

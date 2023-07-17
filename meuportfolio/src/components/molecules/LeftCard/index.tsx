@@ -10,23 +10,38 @@ const LeftCard = () => {
             src={avatarImage} 
             alt='avatar'
             style={{
-            width: '365px',
-            height: '300px',
+            width: '200px',
+            height: '260px',
             overflow: 'visible',
             objectFit: 'cover',
-            marginLeft: '-40px',
-            
+            marginLeft: '-5px',
+            marginTop: '90px',
+            position: 'relative',
             }}
             />
+      
              <p
             style={{
                 textAlign: 'right',
-                justifyContent: 'center',
+                padding:'5%',
+                fontSize: '25px',
+                position: 'absolute',
+                fontWeight: '300',
+                lineHeight: '35px',
                 
-            }}
-            >{t('main.subtitle')}</p>
-        </S.Container>
+            }}>
+                {t('main.subtitle')}
+            <br />
+            <p
+            style={{
+                paddingLeft:'40%',
+                paddingTop: '5%',
+            }}>
+                {t('main.text')}
+            </p>
+         </p>
         
+        </S.Container>
         
     );
 };

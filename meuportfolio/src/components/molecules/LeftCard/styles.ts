@@ -4,7 +4,7 @@ import '../../../styles/variables.css';
 export const Container = styled.div `
 
 width: 500px;
-height: 300px;
+height: 350px;
 color: white;
 display: flex;
 font-weight: 300;
