@@ -9,6 +9,7 @@ color: white;
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: center;
 font-weight: 300;
 border-radius: 10px;
 background: var(--secondary-linear);
