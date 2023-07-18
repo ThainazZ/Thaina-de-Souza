@@ -39,8 +39,8 @@ const LeftCard = () => {
             }}>
                 {t('main.text')}
             </p>
-            <br></br>
-            <p style={{fontFamily: 'Quicksand', fontSize: '25px', fontWeight: '600'}}>{t('main.salute')}</p>
+           
+            <p style={{fontFamily: 'Quicksand', fontSize: '20px', fontWeight: '600'}}>{t('main.salute')}</p>
          </p>
         
         </S.Container>
