@@ -54,7 +54,7 @@ const LanguageSelect = () => {
           control: (provided, state) => ({
             ...provided,
             cursor: 'pointer',
-            width: 152,
+            width: 162,
             height: 62,
             padding: '5%',
             borderRadius: 30,

@@ -14,16 +14,16 @@ const RightCard = () => {
         {t('main.title')}
       </p>
       <div className='Box' style={{maxWidth: '300px', maxHeight: '350px'}}>
-        <Carousel infiniteLoop useKeyboardArrows swipeable showThumbs={false} emulateTouch showStatus={false} autoPlay>
-          <div className='React' style={{padding:'4%'}}>
+        <Carousel infiniteLoop useKeyboardArrows swipeable showThumbs={false} emulateTouch showStatus={false} autoPlay showArrows={false}>
+          <div className='React' style={{paddingBottom:'6%'}}>
             <img src={reactImage} style={{width: '150px', height: '150px'}} alt='React' />
-            <p style={{padding: '8%'}}>
+            <p style={{paddingTop: '4%', paddingBottom: '4%'}}>
               Trabalho diariamente com React e aplicações webs;
             </p>
           </div>
-          <div className='Type' style={{padding:'4%'}}>
+          <div className='Type' style={{paddingBottom:'20%'}}>
             <img src={typeImage} style={{width: '150px', height: '150px'}} alt='TypeScript' />
-            <p style={{padding: '8%'}}>
+            <p style={{paddingTop: '4%', paddingBottom: '4%'}}>
               Utilizo em grande parte o Typescript;
             </p>
           </div>

@@ -4,10 +4,17 @@
         "title": "Olá, sou a Thainá."
     },
 
+    "menu": {
+        "page1": "Início",
+        "page2": "Projetos",
+        "page3": "Experiências"
+    },
+
     "main": {
         "title": "Tecnologias",
         "subtitle": "Sou uma dev front-end com paixão por criar experiências web cativantes.",
-        "text": "Eu sempre estive apaixonada pela ideia de transformar tudo em algo extraordinário. Bem-vindo (a)!"
+        "text": "Eu sempre estive apaixonada pela ideia de transformar tudo em algo extraordinário.",
+        "salute": "Bem-vindo (a)!"
     }
 
 }

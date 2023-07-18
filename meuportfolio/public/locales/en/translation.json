@@ -1,15 +1,20 @@
 {
     "header": {
-        "menuItem": "Home",
         "title": "Hi there! I'm Thainá."
         
-        
+    },
+
+    "menu": {
+        "page1": "Home",
+        "page2": "Projects",
+        "page3": "Experiences"
     },
 
     "main": {
         "title": "Technologies",
         "subtitle": "I'm a front-end developer with a passion for creating captivating web experiences. ",
-        "text": "I've been forever in love with the prospect of making everything a extraordinary thing. Welcome!"
+        "text": "I've been forever in love with the prospect of making everything a extraordinary thing.",
+        "salute": "Welcome!"
     }
 
 }
