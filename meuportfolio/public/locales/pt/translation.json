@@ -10,11 +10,33 @@
         "page3": "Experiências"
     },
 
+    "carousel":{
+        "react":"Trabalho diariamente com React em aplicações web e em conjunto com diversas linguagens;",
+        "typescript": "Desenvolvo e mantenho diversos projetos em Typescript;",
+        "javascript": "Busco aprimorar cada dia mais meus códigos em JavaScript, com projetos back-end e front-end;",
+        "illustrator": "Desenho vetores únicos e personalizados para meus projetos com Illustrator;",
+        "photoshop": "Trabalho e divirto-me com criações e manipulações com Photoshop há mais de 4 anos;",
+        "figma": "Construo protótipos de alta fidelidade com base em regras de negócios e UX research com Figma;"
+    },
+
     "main": {
         "title": "Tecnologias",
         "subtitle": "Sou uma dev front-end com paixão por criar experiências web cativantes.",
         "text": "Eu sempre estive apaixonada pela ideia de transformar tudo em algo extraordinário.",
         "salute": "Bem-vindo (a)!"
+    },
+
+    "feed": {
+        "title": "Desenvolvedora de Software",
+        "text": "Front-End com foco em códigos limpos, semânticos e lindos!",
+        "subtitle": "UX/UI designer",
+        "subtext": "Especializada em prototipação de alta fidelidade para aplicações web;"
+    },
+
+    "footer": {
+        "title": "E agora?",
+        "text": "Vamos trabalhar juntos!",
+        "subtext": "Atualmente busco oportunidades híbridas (Brasil) ou 100% remotas (sem limites);"
     }
 
 }

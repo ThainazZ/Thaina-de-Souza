@@ -7,7 +7,7 @@ export const Container = styled.div `
 
 
    header {
-    margin-top: 3rem;
+    margin-top: 2rem;
     justify-content: center;
    }
 

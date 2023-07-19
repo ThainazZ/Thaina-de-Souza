@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 import backgroundImage from '../assets/FUNDO.png';
-import styled from 'styled-components';
 
 
 

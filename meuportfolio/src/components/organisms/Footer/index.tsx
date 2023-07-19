@@ -1,21 +1,22 @@
 import * as S from './styles';
 import githubImage from '../../../assets/github.png';
 import linkedinImage from '../../../assets/linkedin.png';
+import { useTranslation } from 'react-i18next';
 
 function Final() {
+    const { t } = useTranslation();
     return (
         <S.Container>
             <div>
-                <p style={{color:'white', fontSize:'60px',}}>E agora?</p>
+                <p style={{color:'white', fontSize:'60px',}}>{t('footer.title')}</p>
             </div>
             <br></br>
             <div>
-                <p style={{color:'white', fontSize:'30px', fontWeight:'300'}}>Vamos trabalhar juntos!</p>
+                <p style={{color:'white', fontSize:'30px', fontWeight:'300'}}>{t('footer.text')}</p>
             </div>
             <br></br>
             <div>
-                <p style={{color:'white', fontSize:'20px', padding:'0% 30% 4% 30%', fontWeight:'300'}}>Atualmente busco oportunidades híbridas 
-(Brasil) ou 100% remotas (sem limites);</p>
+                <p style={{color:'white', fontSize:'20px', padding:'0% 30% 4% 30%', fontWeight:'300'}}>{t('footer.subtext')}</p>
             </div>
             <div style={{flexDirection:'row'}}>
         <a href='https://www.linkedin.com/in/thain%C3%A1-souza-799a85186/' target='_blank'><img src={linkedinImage} style={{width:'70px', paddingBottom: '8%', margin:'0 20px 0 0px' }}></img></a>

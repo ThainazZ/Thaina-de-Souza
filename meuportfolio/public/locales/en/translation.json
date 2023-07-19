@@ -10,11 +10,33 @@
         "page3": "Experiences"
     },
 
+    "carousel":{
+        "react":"I work everyday with React in web applications and along side with many languages;",
+        "typescript": "Typescript is my go to language in practicly every project. Just love it;",
+        "javascript": "Currently seeking to improve my skills with JavaScript in both back and front-end projects;",
+        "illustrator": "I create and use uniques vectors on my projects with Illustrator;",
+        "photoshop": "I've been working and having fun with creating and manipulating pictures with Photoshop for the past 4 years;",
+        "figma": "I also build high fidelity prototipes based of business rules with Figma;"
+    },
+
     "main": {
         "title": "Technologies",
         "subtitle": "I'm a front-end developer with a passion for creating captivating web experiences. ",
         "text": "I've been forever in love with the prospect of making everything a extraordinary thing.",
         "salute": "Welcome!"
+    },
+
+    "feed": {
+        "title": "Software Developer",
+        "text": "Front-End focusing in clean codes, semanthics and just beautiful!",
+        "subtitle": "UX/UI designer",
+        "subtext": "Specialized in high fidelity prototipes for web solutions;"
+    },
+
+    "footer": {
+        "title": " And now?",
+        "text": "Let's work together!",
+        "subtext": "I'm currently looking for hybrids oportunities in Brazil ou 100% remotes with no limitations;"
     }
 
 }
