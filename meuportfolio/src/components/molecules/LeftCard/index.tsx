@@ -35,12 +35,12 @@ const LeftCard = () => {
             <p
             style={{
                 paddingLeft:'40%',
-                paddingTop: '5%',
+                paddingTop: '2%',
             }}>
                 {t('main.text')}
             </p>
            
-            <p style={{fontFamily: 'Quicksand', fontSize: '20px', fontWeight: '600'}}>{t('main.salute')}</p>
+            <p style={{fontFamily: 'Quicksand', fontSize: '20px', fontWeight: '600', paddingTop:'2%'}}>{t('main.salute')}</p>
          </p>
         
         </S.Container>

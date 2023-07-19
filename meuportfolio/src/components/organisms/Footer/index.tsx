@@ -18,8 +18,8 @@ function Final() {
 (Brasil) ou 100% remotas (sem limites);</p>
             </div>
             <div style={{flexDirection:'row'}}>
-        <img src={linkedinImage} style={{width:'70px', paddingBottom: '8%', margin:'0 20px 0 0px' }}></img>
-        <img src={githubImage} style={{width:'70px', paddingBottom: '8%', margin:'0 0px 0 20px' }}></img>
+        <a href='https://www.linkedin.com/in/thain%C3%A1-souza-799a85186/' target='_blank'><img src={linkedinImage} style={{width:'70px', paddingBottom: '8%', margin:'0 20px 0 0px' }}></img></a>
+        <a href='https://github.com/ThainazZ' target='_blank'><img src={githubImage} style={{width:'70px', paddingBottom: '8%', margin:'0 0px 0 20px' }}></img></a>
                 </div>
         </S.Container>
         

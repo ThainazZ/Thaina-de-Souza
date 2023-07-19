@@ -10,7 +10,7 @@ const RightCard = () => {
 
   return (
     <S.Container>
-      <p style={{fontSize: '40px', paddingBottom:'2%'}}>
+      <p style={{fontSize: '30px', paddingBottom:'2%'}}>
         {t('main.title')}
       </p>
       <div className='Box' style={{maxWidth: '300px', maxHeight: '350px'}}>
