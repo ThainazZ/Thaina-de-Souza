@@ -10,16 +10,16 @@ const Menu = () => {
         <S.MenuList>
 
         <S.ItemList>
-            <a href='#'>{t('menu.page1')}</a>
+            <a href='#home'>{t('menu.page1')}</a>
         </S.ItemList>
 
         <S.ItemList>
-            <a href='#'>{t('menu.page2')}</a>
+            <a href='#projects'>{t('menu.page2')}</a>
         </S.ItemList>
 
 
         <S.ItemList>
-            <a href='#'>{t('menu.page3')}</a>
+            <a href='#experiences'>{t('menu.page3')}</a>
         </S.ItemList>
 
 

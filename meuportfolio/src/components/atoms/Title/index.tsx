@@ -17,7 +17,7 @@ const Title = () => {
 
     return (
       
-        <h1 style={headingStyles}>{t('header.title')}</h1>
+        <h1 id='home' style={headingStyles}>{t('header.title')}</h1>
       
     );
 };
