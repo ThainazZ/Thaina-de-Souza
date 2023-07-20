@@ -6,17 +6,13 @@ import Middle from '../../molecules/Middle';
 import Final from '../../organisms/Footer';
 
 //define o front-end a ser puxado pelo App no pages
-type FrontendProps = {
-    children: React.ReactNode;
-};
 
 
-const Frontend = ({ children }: FrontendProps) => {
+const Frontend = () => {
     return (
     <S.Container>
         
-        <Header>
-            </Header>
+        <Header />
             <Title />
             <Content />
             <Middle />

@@ -1,4 +1,3 @@
-import * as S from './styles';
 import { Suspense } from 'react';
 import Frontend from '../templates/Frontend';
 
@@ -9,8 +8,7 @@ const locales = {
 
 function App() {
   return (
-  <Frontend>
-  </Frontend>
+  <Frontend />
   );
 };
 

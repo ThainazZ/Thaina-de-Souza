@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Select from 'react-select';
 import { useTranslation } from 'react-i18next';
 import '../../../styles/variables.css';
@@ -19,7 +19,9 @@ const LanguageSelect = () => {
     { value: 'pt', label: 'Portuguese' },
   ];
 
-  const getOptionLabel = (option: OptionTypeBase) => {
+  const primaryLinearColor = 'var(--primary-linear)';
+
+  const customOptionLabel = (option: any) => {
     return (
       <label
         style={{
@@ -33,11 +35,25 @@ const LanguageSelect = () => {
           outline: '0',
           cursor: 'pointer',
         }}
-
         onClick={() => handleLanguageChange(option)}
-        >
+      >
         {option.label}
       </label>
+    );
+  };
+
+  const CustomIndicator = (props: any) => {
+    return (
+      <div
+        style={{
+          ...props.getStyles('indicatorContainer', props),
+          transform: props.isFocused ? 'rotate(180deg)' : 'none',
+          color: props.isFocused ? 'white' : 'white',
+          outline: 'none',
+        }}
+      >
+        {props.children}
+      </div>
     );
   };
 
@@ -47,7 +63,7 @@ const LanguageSelect = () => {
         value={selectedLanguage}
         onChange={handleLanguageChange}
         options={languageOptions}
-        getOptionLabel={getOptionLabel}
+        getOptionLabel={customOptionLabel}
         isSearchable={false}
         placeholder="I speak..."
         styles={{
@@ -60,7 +76,7 @@ const LanguageSelect = () => {
             borderRadius: 30,
             border: state.isFocused ? 0 : 0,
             boxShadow: state.isFocused ? '0' : '0',
-            background: 'var(--primary-linear)',
+            background: primaryLinearColor,
             '&:hover': {
               border: state.isFocused ? 0 : 0,
             },
@@ -70,22 +86,21 @@ const LanguageSelect = () => {
           }),
           dropdownIndicator: (provided, state) => ({
             ...provided,
-            transform: state.selectProps.menuIsOpen ? 'rotate(180deg)' : 'none',
             color: state.isFocused ? 'white' : 'white',
             outline: 'none',
           }),
           menu: (provided) => ({
             ...provided,
-            backgroundColor: 'var(--primary-linear)',
+            backgroundColor: primaryLinearColor,
             outline: '0',
           }),
           option: (provided, state) => ({
             ...provided,
-            backgroundColor: state.isFocused ? 'var(--primary-linear)' : 'var(--primary-linear)',
-            color: 'var(--primary-linear)',
+            backgroundColor: state.isFocused ? primaryLinearColor : primaryLinearColor,
+            color: primaryLinearColor,
             cursor: 'pointer',
             '&:hover': {
-              backgroundColor: 'var(--primary-linear)', // Update background color on hover
+              backgroundColor: primaryLinearColor, // Update background color on hover
             },
           }),
           placeholder: (provided) => ({
@@ -96,9 +111,11 @@ const LanguageSelect = () => {
             justifyContent: 'center',
           }),
         }}
+        components={{
+          IndicatorSeparator: () => null,
+          DropdownIndicator: CustomIndicator,
+        }}
       />
-
-
     </div>
   );
 };

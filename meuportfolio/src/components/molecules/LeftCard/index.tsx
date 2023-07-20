@@ -3,7 +3,7 @@ import * as S from './styles';
 import avatarImage from '../../../assets/AVATAR.png';
 
 const LeftCard = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     return (
         <S.Container>
             <img 
