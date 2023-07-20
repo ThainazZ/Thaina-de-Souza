@@ -3,7 +3,7 @@ import * as S from "./styles";
 import "../../../styles/variables.css";
 
 const Middle = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <S.Container>
       <div  id="projects">

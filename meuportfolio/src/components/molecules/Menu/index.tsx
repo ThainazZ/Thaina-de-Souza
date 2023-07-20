@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 
 const Menu = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     return (
         <S.MenuList>
 

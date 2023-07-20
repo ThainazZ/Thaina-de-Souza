@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Select from 'react-select';
 import { useTranslation } from 'react-i18next';
 import '../../../styles/variables.css';
@@ -19,26 +19,70 @@ const LanguageSelect = () => {
     { value: 'pt', label: 'Portuguese' },
   ];
 
-  const getOptionLabel = (option: OptionTypeBase) => {
-    return (
-      <label
-        style={{
-          color: 'white',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          fontSize: '16px',
-          fontWeight: 'lighter',
-          textDecoration: 'none',
-          outline: '0',
-          cursor: 'pointer',
-        }}
-
-        onClick={() => handleLanguageChange(option)}
-        >
-        {option.label}
-      </label>
-    );
+  const customStyles = {
+    control: (provided: any, state: any) => ({
+      ...provided,
+      cursor: 'pointer',
+      display: 'flex',
+      textAlign: 'center',
+      width: 162,
+      height: 62,
+      padding: '5%',
+      borderRadius: 30,
+      border: state.isFocused ? 0 : 0,
+      boxShadow: state.isFocused ? '0' : '0',
+      background: 'var(--primary-linear)',
+      '&:hover': {
+        border: state.isFocused ? 0 : 0,
+      },
+    }),
+    indicatorSeparator: () => ({
+      display: 'none',
+    }),
+    dropdownIndicator: (provided: any, state: any) => ({
+      ...provided,
+      transform: state.selectProps.menuIsOpen ? 'rotate(180deg)' : 'none',
+      color: 'white',
+      outline: 'none',
+      display: 'flex',
+      textAlign: 'center',
+    }),
+    menu: (provided: any) => ({
+      ...provided,
+      backgroundColor: 'var(--primary-linear)',
+      outline: '0',
+      display: 'flex',
+      justifyContent: 'center',
+      color: 'white'
+    }),
+    option: (provided: any, state: any) => ({
+      ...provided,
+      backgroundColor: state.isFocused ? 'var(--primary-linear)' : 'var(--primary-linear)',
+      color: state.isSelected ? 'white' : 'var(--primary-linear)',
+      cursor: 'pointer',
+      '&:hover': {
+        backgroundColor: 'var(--primary-linear)',
+        color: 'white',
+      },
+    }),
+    singleValue: (provided: any) => ({
+      ...provided,
+      color: 'white',
+    }),
+    placeholder: (provided: any) => ({
+      ...provided,
+      color: 'white',
+      outline: '0',
+      display: 'flex',
+      textAlign: 'center',
+      justifyContent: 'center',
+    }),
+    input: (provided: any) => ({
+      ...provided,
+      color: 'white',
+      display: ' flex',
+      textAlign: 'center'
+    }),
   };
 
   return (
@@ -47,58 +91,12 @@ const LanguageSelect = () => {
         value={selectedLanguage}
         onChange={handleLanguageChange}
         options={languageOptions}
-        getOptionLabel={getOptionLabel}
+        getOptionLabel={(option) => option.label}
+        getOptionValue={(option) => option.value}
         isSearchable={false}
         placeholder="I speak..."
-        styles={{
-          control: (provided, state) => ({
-            ...provided,
-            cursor: 'pointer',
-            width: 162,
-            height: 62,
-            padding: '5%',
-            borderRadius: 30,
-            border: state.isFocused ? 0 : 0,
-            boxShadow: state.isFocused ? '0' : '0',
-            background: 'var(--primary-linear)',
-            '&:hover': {
-              border: state.isFocused ? 0 : 0,
-            },
-          }),
-          indicatorSeparator: () => ({
-            display: 'none',
-          }),
-          dropdownIndicator: (provided, state) => ({
-            ...provided,
-            transform: state.selectProps.menuIsOpen ? 'rotate(180deg)' : 'none',
-            color: state.isFocused ? 'white' : 'white',
-            outline: 'none',
-          }),
-          menu: (provided) => ({
-            ...provided,
-            backgroundColor: 'var(--primary-linear)',
-            outline: '0',
-          }),
-          option: (provided, state) => ({
-            ...provided,
-            backgroundColor: state.isFocused ? 'var(--primary-linear)' : 'var(--primary-linear)',
-            color: 'var(--primary-linear)',
-            cursor: 'pointer',
-            '&:hover': {
-              backgroundColor: 'var(--primary-linear)', // Update background color on hover
-            },
-          }),
-          placeholder: (provided) => ({
-            ...provided,
-            color: 'white',
-            outline: '0',
-            display: 'flex',
-            justifyContent: 'center',
-          }),
-        }}
+        styles={customStyles}
       />
-
-
     </div>
   );
 };
