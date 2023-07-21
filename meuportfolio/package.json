@@ -17,10 +17,14 @@
     "react-dom": "^18.2.0",
     "react-draggable": "^4.4.5",
     "react-i18next": "^13.0.2",
+    "react-responsive": "^9.0.2",
     "react-responsive-carousel": "^3.2.23",
     "react-select": "^5.7.4",
+    "react-spring": "^9.7.2",
     "react-switch": "^7.0.0",
-    "styled-components": "^6.0.3"
+    "react-transition-group": "^4.4.5",
+    "styled-components": "^6.0.3",
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

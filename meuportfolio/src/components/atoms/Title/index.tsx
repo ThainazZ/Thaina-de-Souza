@@ -12,7 +12,7 @@ const Title = () => {
         fontWeight: 'normal',
         textAlign: 'center',
         paddingTop: '6rem',
-        paddingBottom: '3rem',}}>{t('header.title')}</h1>
+        paddingBottom: '2rem',}}>{t('header.title')}</h1>
       
     );
 };

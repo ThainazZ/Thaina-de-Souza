@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import Select from 'react-select';
+import  makeAnimated from 'react-select';
 import { useTranslation } from 'react-i18next';
 import '../../../styles/variables.css';
+
+
+const animatedComponents = makeAnimated();
 
 const LanguageSelect = () => {
   const { i18n } = useTranslation();
@@ -20,84 +24,80 @@ const LanguageSelect = () => {
   ];
 
   const customStyles = {
-    control: (provided: any, state: any) => ({
+    control: (provided: any) => ({
       ...provided,
       cursor: 'pointer',
-      display: 'flex',
+      width: '9rem',
       textAlign: 'center',
-      width: 162,
-      height: 62,
-      padding: '5%',
-      borderRadius: 30,
-      border: state.isFocused ? 0 : 0,
-      boxShadow: state.isFocused ? '0' : '0',
-      background: 'var(--primary-linear)',
+      paddingLeft: '10%',
+      borderRadius: '30px',
+      border: 0,
+      boxShadow: 0,
+      background: 'transparent',
+      fontSize: '1rem',
       '&:hover': {
-        border: state.isFocused ? 0 : 0,
-      },
-    }),
-    indicatorSeparator: () => ({
-      display: 'none',
-    }),
-    dropdownIndicator: (provided: any, state: any) => ({
-      ...provided,
-      transform: state.selectProps.menuIsOpen ? 'rotate(180deg)' : 'none',
-      color: 'white',
-      outline: 'none',
-      display: 'flex',
-      textAlign: 'center',
+        background: 'var(--secondary-linear)',
+        transition: ''
+      }
     }),
     menu: (provided: any) => ({
       ...provided,
-      backgroundColor: 'var(--primary-linear)',
-      outline: '0',
-      display: 'flex',
-      justifyContent: 'center',
-      color: 'white'
+      color: 'white',
+      background: 'transparent',
+      textAlign: 'left',
+      fontSize: '1rem',
+      paddingLeft: '15%',
+      
+    
     }),
     option: (provided: any, state: any) => ({
       ...provided,
-      backgroundColor: state.isFocused ? 'var(--primary-linear)' : 'var(--primary-linear)',
-      color: state.isSelected ? 'white' : 'var(--primary-linear)',
-      cursor: 'pointer',
-      '&:hover': {
-        backgroundColor: 'var(--primary-linear)',
-        color: 'white',
-      },
+      background: state.isFocused ? 'var(--back-color)' : 'transparent',
+      color: state.isFocused ? 'var(--primary-color)' : 'white',
+      borderRadius: '30px',
+      '&:active': {
+        background: 'transparent',
+      }
+     
+  
+    }),
+
+    placeholder: (provided: any) => ({
+      ...provided,
+      color: 'white',
+      outline: '0'
+    }),
+
+    input: (provided: any) => ({
+      ...provided,
+      color: 'white'
     }),
     singleValue: (provided: any) => ({
       ...provided,
       color: 'white',
     }),
-    placeholder: (provided: any) => ({
-      ...provided,
-      color: 'white',
-      outline: '0',
-      display: 'flex',
-      textAlign: 'center',
-      justifyContent: 'center',
-    }),
-    input: (provided: any) => ({
-      ...provided,
-      color: 'white',
-      display: ' flex',
-      textAlign: 'center'
-    }),
-  };
 
+    indicatorSeparator: () => ({
+      display: 'none'
+    }),
+    dropdownIndicator: (provided: any, state: any) => ({
+      ...provided,
+      transform: state.selectProps.menuIsOpen ? 'rotate(180deg)' : 'none',
+      color: 'white'
+    })
+  };
+  
   return (
-    <div>
-      <Select
-        value={selectedLanguage}
-        onChange={handleLanguageChange}
-        options={languageOptions}
-        getOptionLabel={(option) => option.label}
-        getOptionValue={(option) => option.value}
-        isSearchable={false}
-        placeholder="I speak..."
-        styles={customStyles}
-      />
-    </div>
+    <Select
+      value={selectedLanguage}
+      onChange={handleLanguageChange}
+      options={languageOptions}
+      getOptionLabel={(option) => option.label}
+      getOptionValue={(option) => option.value}
+      isSearchable={false}
+      placeholder="I speak..."
+      styles={customStyles}
+    />
   );
 };
 

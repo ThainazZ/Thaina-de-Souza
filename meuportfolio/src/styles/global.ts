@@ -1,9 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import backgroundImage from '../assets/FUNDO.png';
 
-
-
-
 //estilo global da tela
 
 const globalStyle = createGlobalStyle `
@@ -25,13 +22,11 @@ body {
     background-repeat: none;
 }
 
-#root {
-    
-    
-
-  
-    
+html {
+    scroll-behavior: smooth;
 }
+
+
 
 `;
 

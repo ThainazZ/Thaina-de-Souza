@@ -21,7 +21,6 @@ const Frontend = () => {
     </S.Container>
 
     
-       
     );
 };
 
