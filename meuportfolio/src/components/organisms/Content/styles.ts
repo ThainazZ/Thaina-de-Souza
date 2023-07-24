@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import React from "react";
 import media from "styled-media-query";
 
 
