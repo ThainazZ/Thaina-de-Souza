@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import media from 'styled-media-query';
 
 
 export const Box = styled.header `
@@ -9,16 +8,11 @@ export const Box = styled.header `
     gap: 10rem;
     align-items: center;
 
-    ${media.lessThan("small")`
-    min-width: 360px;
+   @media  (max-width: 360px) {
+    display: flex;
+    flex-direction: column-reverse;
     gap: 2rem;
-    align-items: center;
-    flex-direction: column;
-    
-
-
-
-`};
+  }
 
 
 `;

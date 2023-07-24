@@ -4,10 +4,18 @@ import styled from "styled-components"
 
 export const Container = styled.div `
 
-align-items: center;
+display: flex;
+flex-direction: column;
 text-align: center;
 
 
+@media  (max-width: 360px) {
+    width: 360px;
+    margin: 0;
+    padding: 0;
+
+
+  }
 
 
 `

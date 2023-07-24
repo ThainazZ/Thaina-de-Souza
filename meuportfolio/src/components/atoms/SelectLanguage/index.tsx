@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Select from 'react-select';
 import { useTranslation } from 'react-i18next';
 import '../../../styles/variables.css';
-import './styles.css';
 
 
 const LanguageSelect = () => {
@@ -38,6 +37,7 @@ const LanguageSelect = () => {
       '&:hover': {
         background: 'var(--secondary-linear)',
       }
+      
     }),
     menu: (provided: any) => ({
       ...provided,

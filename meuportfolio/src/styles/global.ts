@@ -19,12 +19,18 @@ body {
     height: 100%;
     width: 100%;
     background-image: url(${backgroundImage});
-    background-repeat: none;
+
+    .example::-webkit-scrollbar {
+        display: none;
+      }
+
 }
 
 html {
     scroll-behavior: smooth;
+ 
 }
+
 
 
 

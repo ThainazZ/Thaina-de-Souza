@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import media from 'styled-media-query';
+
 
 
 
@@ -11,12 +11,7 @@ export const Container = styled.div `
     justify-content: center;
    }
 
-   ${media.lessThan("small")`
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    
-`}
+   
 
    
 

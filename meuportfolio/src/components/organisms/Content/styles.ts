@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import media from "styled-media-query";
-
 
 export const Container = styled.div `
 
@@ -10,13 +8,11 @@ justify-content: center;
 padding-top: 2.5rem;
 gap: 2.5rem;
 
-${media.lessThan("small")`
+@media  (max-width: 360px) {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-`};
+    gap: 2rem;
+  }
 
 `;
 

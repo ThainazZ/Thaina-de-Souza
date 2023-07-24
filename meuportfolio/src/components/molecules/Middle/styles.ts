@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import media from 'styled-media-query';
 
 
 export const Container = styled.div `
@@ -9,9 +8,11 @@ text-align: center;
 padding-top: 6rem;
 
 
-${media.lessThan("small")`
-    width: 50%;
-    
-`}
+@media  (max-width: 360px) {
+    width: 360px;
+    height: 700px;
+    padding-top: 3rem;
+    justify-content: space-between;
+  }
 
 `

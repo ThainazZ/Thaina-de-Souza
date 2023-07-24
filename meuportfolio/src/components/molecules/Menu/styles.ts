@@ -1,16 +1,16 @@
 import styled from 'styled-components';
-import media from 'styled-media-query';
+
 
 export const MenuList = styled.ul`
 
 display: flex;
 gap: 10rem;
 
+@media  (max-width: 360px) {
+    display: flex;
+    gap: 1.5rem;
+  }
 
-${media.lessThan("small")`
-max-width: 360px;
-gap: 5rem;
-`};
 
 
 `
@@ -20,11 +20,11 @@ display: inline-block;
 font-weight: 300;
 font-size: 1.5rem;
 
+@media  (max-width: 360px) {
+    font-size: 1rem;
+  }
 
-${media.lessThan("small")`
-    margin-right: 0px;
-    
-`};
+
 
 
 
