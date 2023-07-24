@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@coreui/react": "^4.9.1",
+    "@mui/material": "^5.14.1",
+    "@types/react-transition-group": "^4.4.6",
     "i18next": "^23.2.11",
     "i18next-browser-languagedetector": "^7.1.0",
     "i18next-http-backend": "^2.2.1",

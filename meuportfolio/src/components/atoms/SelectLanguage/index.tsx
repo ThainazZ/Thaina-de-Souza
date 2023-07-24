@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import Select from 'react-select';
-import  makeAnimated from 'react-select';
 import { useTranslation } from 'react-i18next';
 import '../../../styles/variables.css';
+import './styles.css';
 
-
-const animatedComponents = makeAnimated();
 
 const LanguageSelect = () => {
   const { i18n } = useTranslation();
@@ -18,6 +16,8 @@ const LanguageSelect = () => {
     }
   };
 
+
+
   const languageOptions = [
     { value: 'en', label: 'English' },
     { value: 'pt', label: 'Portuguese' },
@@ -27,7 +27,7 @@ const LanguageSelect = () => {
     control: (provided: any) => ({
       ...provided,
       cursor: 'pointer',
-      width: '9rem',
+      width: '10rem',
       textAlign: 'center',
       paddingLeft: '10%',
       borderRadius: '30px',
@@ -37,7 +37,6 @@ const LanguageSelect = () => {
       fontSize: '1rem',
       '&:hover': {
         background: 'var(--secondary-linear)',
-        transition: ''
       }
     }),
     menu: (provided: any) => ({
@@ -47,9 +46,12 @@ const LanguageSelect = () => {
       textAlign: 'left',
       fontSize: '1rem',
       paddingLeft: '15%',
+    
+
       
     
     }),
+
     option: (provided: any, state: any) => ({
       ...provided,
       background: state.isFocused ? 'var(--back-color)' : 'transparent',
@@ -86,9 +88,11 @@ const LanguageSelect = () => {
       color: 'white'
     })
   };
+
   
   return (
     <Select
+    
       value={selectedLanguage}
       onChange={handleLanguageChange}
       options={languageOptions}
@@ -97,6 +101,11 @@ const LanguageSelect = () => {
       isSearchable={false}
       placeholder="I speak..."
       styles={customStyles}
+      hideSelectedOptions={true}
+  
+    
+    
+      
     />
   );
 };
