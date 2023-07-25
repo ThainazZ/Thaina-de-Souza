@@ -10,7 +10,7 @@ justify-content: center;
 padding-top: 2.5rem;
 gap: 2.5rem;
 
-@media  (max-width: 360px) {
+@media  (max-width: 400px) {
     width: 360px;
   }
 

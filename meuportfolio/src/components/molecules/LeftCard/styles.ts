@@ -13,7 +13,7 @@ background: var(--secondary-linear);
 backdrop-filter: blur(30px);
 box-shadow: 0px 2px 30px 0px rgba(49, 10, 49, 0.50);
 
-@media  (max-width: 360px) {
+@media  (max-width: 400px) {
     width: 300px;
     height: 270px;
 
@@ -29,7 +29,7 @@ export const image = styled.img `
     margin-top: 90px;
     position: relative;
 
-@media  (max-width: 360px) {
+@media  (max-width: 400px) {
     width: 200px;
     height: 200px;
     overflow: hidden;
@@ -48,7 +48,7 @@ position: absolute;
 font-weight: 300;
 line-height: 35px;
 
-@media  (max-width: 360px) {
+@media  (max-width: 400px) {
     font-size: 18px;
     line-height: 23px;
    

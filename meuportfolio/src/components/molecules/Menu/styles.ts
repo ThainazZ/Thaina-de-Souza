@@ -6,7 +6,7 @@ export const MenuList = styled.ul`
 display: flex;
 gap: 10rem;
 
-@media  (max-width: 360px) {
+@media  (max-width: 400px) {
     display: none;
   }
 
@@ -19,7 +19,7 @@ display: inline-block;
 font-weight: 300;
 font-size: 1.5rem;
 
-@media  (max-width: 360px) {
+@media  (max-width: 400px) {
     font-size: 1rem;
   }
 

@@ -11,7 +11,7 @@ export const titulo = styled.div`
         padding-bottom: 2rem;
 
 
-@media  (max-width: 360px) {
+@media  (max-width: 400px) {
     font-size: 23px;
     text-align: center;
     padding-top: 5rem;

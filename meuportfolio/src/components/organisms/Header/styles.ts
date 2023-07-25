@@ -8,7 +8,7 @@ export const Box = styled.header `
     gap: 10rem;
     align-items: center;
 
-   @media  (max-width: 360px) {
+   @media  (max-width: 400px) {
     padding-top: 2%;
   }
 
