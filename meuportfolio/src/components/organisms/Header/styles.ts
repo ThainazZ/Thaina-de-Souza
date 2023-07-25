@@ -9,9 +9,7 @@ export const Box = styled.header `
     align-items: center;
 
    @media  (max-width: 360px) {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 2rem;
+    padding-top: 2%;
   }
 
 

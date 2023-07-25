@@ -12,7 +12,7 @@ text-align: center;
 @media  (max-width: 360px) {
     width: 360px;
     margin: 0;
-    padding: 0;
+    padding: 5%;
 
 
   }

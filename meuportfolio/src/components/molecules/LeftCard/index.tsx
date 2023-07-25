@@ -13,16 +13,7 @@ const LeftCard = () => {
             alt='avatar'
             />
      
-             <p
-            style={{
-                textAlign: 'right',
-                padding:'5%',
-                fontSize: '25px',
-                position: 'absolute',
-                fontWeight: '300',
-                lineHeight: '35px',
-                
-            }}>
+             <S.text>
                 {t('main.subtitle')}
             <br />
             <p
@@ -34,7 +25,7 @@ const LeftCard = () => {
             </p>
            
             <p style={{fontFamily: 'Quicksand', fontSize: '20px', fontWeight: '600', paddingTop:'2%'}}>{t('main.salute')}</p>
-         </p>
+         </S.text>
 
         </S.Container>
         

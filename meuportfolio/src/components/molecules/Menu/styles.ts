@@ -7,8 +7,7 @@ display: flex;
 gap: 10rem;
 
 @media  (max-width: 360px) {
-    display: flex;
-    gap: 1.5rem;
+    display: none;
   }
 
 

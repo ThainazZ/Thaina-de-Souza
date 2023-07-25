@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import * as S from './styles';
+
 
 
 const Title = () => {
@@ -6,13 +8,7 @@ const Title = () => {
 
     return (
       
-        <h1 id='home' style={{ color: 'white', 
-        fontSize: '32px', 
-        fontFamily: 'Quicksand',
-        fontWeight: 'normal',
-        textAlign: 'center',
-        paddingTop: '6rem',
-        paddingBottom: '2rem',}}>{t('header.title')}</h1>
+        <S.titulo>{t('header.title')}</S.titulo>
       
     );
 };
