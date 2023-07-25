@@ -8,7 +8,7 @@ text-align: center;
 padding-top: 6rem;
 
 
-@media  (max-width: 400px) {
+@media  (max-width: 500px) {
     width: 360px;
     height: 700px;
     padding-top: 3rem;

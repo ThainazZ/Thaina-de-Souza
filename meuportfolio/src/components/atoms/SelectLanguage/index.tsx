@@ -37,7 +37,6 @@ const LanguageSelect = () => {
       '&:hover': {
         background: 'var(--secondary-linear)',
       }
-      
     }),
     menu: (provided: any) => ({
       ...provided,

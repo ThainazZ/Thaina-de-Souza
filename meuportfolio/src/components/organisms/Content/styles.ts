@@ -8,7 +8,7 @@ justify-content: center;
 padding-top: 2.5rem;
 gap: 2.5rem;
 
-@media  (max-width: 400px) {
+@media  (max-width: 500px) {
     display: flex;
     flex-direction: column;
     gap: 2rem;

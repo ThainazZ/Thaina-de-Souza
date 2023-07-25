@@ -19,7 +19,7 @@ display: inline-block;
 font-weight: 300;
 font-size: 1.5rem;
 
-@media  (max-width: 400px) {
+@media  (max-width: 500px) {
     font-size: 1rem;
   }
 

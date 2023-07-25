@@ -48,7 +48,7 @@ position: absolute;
 font-weight: 300;
 line-height: 35px;
 
-@media  (max-width: 400px) {
+@media  (max-width: 500px) {
     font-size: 18px;
     line-height: 23px;
    
