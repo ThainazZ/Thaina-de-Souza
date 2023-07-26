@@ -6,89 +6,46 @@ const Middle = () => {
   const { t } = useTranslation();
   return (
     <S.Container>
-      <div  id="projects">
+      <S.Texts id="projects">
         <h3>{t("feed.title")}</h3>
         <p>{t("feed.text")}</p>
-      </div>
+      </S.Texts>
 
       <section
         style={{
           display: "flex",
           justifyContent: "center",
           paddingTop: "8%",
-          gap: "5%",
+          gap: "2%",
         }}
       >
-        <div
-          style={{
-            width: "300px",
-            height: "200px",
-            background: "var(--secondary-linear)",
-            backdropFilter: "blur(30px)",
-            borderRadius: "10px",
-          }}
-        ></div>
-        <div
-          style={{
-            width: "300px",
-            height: "200px",
-            background: "var(--secondary-linear)",
-            backdropFilter: "blur(30px)",
-            borderRadius: "10px",
-          }}
-        ></div>
-        <div
-          style={{
-            width: "300px",
-            height: "200px",
-            background: "var(--secondary-linear)",
-            backdropFilter: "blur(30px)",
-            borderRadius: "10px",
-          }}
-        ></div>
+        <S.Cards
+        ></S.Cards>
+        <S.Cards
+        ></S.Cards>
+        <S.Cards
+        ></S.Cards>
       </section>
 
-      <div id="experiences" style={{ paddingTop: "8%" }}>
+      <S.Texts id="experiences">
         <h3>{t("feed.subtitle")}</h3>
         <p>{t("feed.subtext")}</p>
-      </div>
+      </S.Texts>
 
-      <section 
+      <section
         style={{
           display: "flex",
           justifyContent: "center",
           paddingTop: "8%",
-          paddingBottom: "8%",
-          gap: "5%",
+          gap: "2%",
         }}
       >
-        <div
-          style={{
-            width: "300px",
-            height: "200px",
-            background: "var(--secondary-linear)",
-            backdropFilter: "blur(30px)",
-            borderRadius: "10px",
-          }}
-        ></div>
-        <div
-          style={{
-            width: "300px",
-            height: "200px",
-            background: "var(--secondary-linear)",
-            backdropFilter: "blur(30px)",
-            borderRadius: "10px",
-          }}
-        ></div>
-        <div
-          style={{
-            width: "300px",
-            height: "200px",
-            background: "var(--secondary-linear)",
-            backdropFilter: "blur(30px)",
-            borderRadius: "10px",
-          }}
-        ></div>
+        <S.Cards
+        ></S.Cards>
+        <S.Cards
+        ></S.Cards>
+        <S.Cards
+        ></S.Cards>
       </section>
     </S.Container>
   );

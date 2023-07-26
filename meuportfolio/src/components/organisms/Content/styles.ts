@@ -8,12 +8,17 @@ justify-content: center;
 padding-top: 2.5rem;
 gap: 2.5rem;
 
-@media  (max-width: 500px) {
+@media  (max-width: 640px) {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
 
+  @media  (max-width: 962px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 `;
 
 

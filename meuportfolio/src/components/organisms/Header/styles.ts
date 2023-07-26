@@ -8,8 +8,14 @@ export const Box = styled.header `
     gap: 10rem;
     align-items: center;
 
-   @media  (max-width: 500px) {
+   @media  (max-width: 640px) {
     padding-top: 2%;
+  }
+
+  @media  (max-width: 962px) {
+    gap: 5rem;
+    padding-top: 2%;
+
   }
 
 
