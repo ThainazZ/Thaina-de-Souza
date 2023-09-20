@@ -30,7 +30,9 @@
         "title": "Software Developer",
         "text": "Front-End focusing in clean codes, semanthics and just beautiful!",
         "subtitle": "UX/UI designer",
-        "subtext": "Specialized in high fidelity prototipes for web solutions;"
+        "subtext": "Specialized in high fidelity prototipes for web solutions;",
+        "name": "Iron Pump",
+        "description": "Online catalog for a supplement store, build with vanilla Javascript and hosted by Vercel."
     },
 
     "footer": {

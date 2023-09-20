@@ -30,7 +30,9 @@
         "title": "Desenvolvedora de Software",
         "text": "Front-End com foco em códigos limpos, semânticos e lindos!",
         "subtitle": "UX/UI designer",
-        "subtext": "Especializada em prototipação de alta fidelidade para aplicações web;"
+        "subtext": "Especializada em prototipação de alta fidelidade para aplicações web;",
+        "name": "Iron Pump",
+        "description": "Catálogo online para uma loja de suplementos, feito com Javascript básico e hospedado na Vercel."
     },
 
     "footer": {

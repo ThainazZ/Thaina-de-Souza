@@ -3,9 +3,12 @@ import '../../../styles/variables.css';
 
 export const Container = styled.div `
 
+display: flex;
+flex-direction: column;
 color: white;
 text-align: center;
-padding-top: 6rem;
+padding-top: 1rem;
+align-items: center;
 
 
 @media  (max-width: 640px) {
@@ -45,7 +48,7 @@ border-radius: 10px;
 
 export const Texts = styled.div `
 
-padding: 5% 10% 0%;
+padding: 5% 10%;
 
 @media  (max-width: 640px) {
    
@@ -55,7 +58,7 @@ padding: 5% 10% 0%;
 
 @media  (max-width: 962px) {
   
-  padding: 8% 15% 0%;
+  padding: 5% 15%;
 }
 
 `
