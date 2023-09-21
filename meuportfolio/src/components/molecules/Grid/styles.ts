@@ -52,6 +52,6 @@ export const Button = styled.button`
 
   &:hover {
 
-    color: purple;
+    color: var(--hover-color);
   }
 `;
