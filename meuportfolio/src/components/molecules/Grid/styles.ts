@@ -40,17 +40,18 @@ export const Button = styled.button`
   margin: 1rem 1rem 1.5rem 1rem;
   cursor: pointer;
   color: white;
+  border-radius: 5px;
   border: none;
   text-decoration: none;
   outline: none;
   height: 3rem;
-  width: 7rem;
+  width: 19rem;
   background: var(--secondary-linear);
   backdrop-filter: blur(30px);
   box-shadow: 0px 2px 30px 0px rgba(49, 10, 49, 0.5);
 
   &:hover {
-    background-color: white;
+
     color: purple;
   }
 `;
