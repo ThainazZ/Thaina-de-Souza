@@ -34,6 +34,12 @@ export const Box = styled.div`
 
 export const Card = styled.div`
   margin: 2rem 2rem 0rem 2rem;
+  
+
+&:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
 `;
 
 export const Button = styled.button`
@@ -49,6 +55,8 @@ export const Button = styled.button`
   background: var(--secondary-linear);
   backdrop-filter: blur(30px);
   box-shadow: 0px 2px 30px 0px rgba(49, 10, 49, 0.5);
+  transition: all  0.3s ease;
+  
 
   &:hover {
 
