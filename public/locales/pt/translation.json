@@ -27,18 +27,18 @@
     },
 
     "feed": {
-        "title": "Desenvolvedora de Software",
+        "title": "Projetos importantes para a minha formação:",
         "text": "Front-End com foco em códigos limpos, semânticos e lindos!",
-        "subtitle": "UX/UI designer",
-        "subtext": "Especializada em prototipação de alta fidelidade para aplicações web;",
+        "experience": "Desenvolvedora de Sistemas I",
+        "subtext": "Especializada em prototipação de alta fidelidade para aplicações web, e desenvolvimento front-end de softwares amigáveis e intuitivos para o usuário.",
         "name": "Iron Pump",
-        "description": "Catálogo online para uma loja de suplementos, feito com Javascript básico e hospedado na Vercel."
+        "description": "Catálogo online para uma loja de suplementos, feito com Javascript básico e hospedado na Vercel.",
+        "ocupation": "Atuo no desenvolvimento de sistemas para a Grendene S/A, a principal indústria de calçados da América Latina, aplicando vasta experiência e inovação."
     },
 
     "footer": {
         "title": "E agora?",
-        "text": "Vamos trabalhar juntos!",
-        "subtext": "Atualmente busco oportunidades híbridas (Brasil) ou 100% remotas (sem limites);"
+        "text": "Venha me conhecer!"
     }
 
 }

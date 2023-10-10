@@ -27,18 +27,18 @@
     },
 
     "feed": {
-        "title": "Software Developer",
+        "title": "Important projects for my career:",
         "text": "Front-End focusing in clean codes, semanthics and just beautiful!",
-        "subtitle": "UX/UI designer",
-        "subtext": "Specialized in high fidelity prototipes for web solutions;",
+        "experience": "Software Developer I",
+        "subtext": "Specialized high fidelity prototipation for web applications, and front-end development for friendly and intuitive softwares.",
         "name": "Iron Pump",
-        "description": "Online catalog for a supplement store, build with vanilla Javascript and hosted by Vercel."
+        "description": "Online catalog for a supplement store, build with vanilla Javascript and hosted by Vercel.",
+        "ocupation": "I specialize in system development at Grendene S/A, the largest footwear manufacturer in Latin America, leveraging extensive expertise and innovation. "
     },
 
     "footer": {
         "title": " And now?",
-        "text": "Let's work together!",
-        "subtext": "I'm currently looking for hybrids oportunities in Brazil or 100% remotes with no limitations;"
+        "text": "Let's get to know each other!"
     }
 
 }

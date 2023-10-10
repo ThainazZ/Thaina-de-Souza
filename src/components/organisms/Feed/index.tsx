@@ -7,6 +7,7 @@ function Feed () {
             <Middle />
         </S.Container>
         
+        
     );
 };
 

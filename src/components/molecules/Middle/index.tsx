@@ -13,6 +13,14 @@ const Middle = () => {
       </S.Texts>
 
       <CarouselProjects />
+      <S.Texts id="experiences">
+        <h2>{t("feed.experience")}</h2>
+        {/* <p>{t("feed.subtext")}</p> */}
+      </S.Texts>
+
+      <S.OcupationDiv>
+          <p>{t("feed.ocupation")}</p>
+      </S.OcupationDiv>
     </S.Container>
   );
 };

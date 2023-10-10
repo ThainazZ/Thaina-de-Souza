@@ -21,16 +21,16 @@ const CarouselProjects = () => {
     <S.Box>
       
             <p style={{padding: '0rem 1rem'}}>
-            {t('feed.description')}
+            
             </p>
-            <S.Button>Acessar</S.Button>
+            <S.Button>Em construção</S.Button>
     </S.Box>
     <S.Box>
       
             <p style={{padding: '0rem 1rem'}}>
-            {t('feed.description')}
+            
             </p>
-            <S.Button>Acessar</S.Button>
+            <S.Button>Em construção</S.Button>
     </S.Box>
     </S.Container>
   );

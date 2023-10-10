@@ -48,9 +48,7 @@ function Final() {
                 <p style={{color:'white', fontSize:'30px', fontWeight:'300'}}>{t('footer.text')}</p>
             </div>
             <br></br>
-            <div style={{display: 'flex', justifyContent:'center'}}>
-                <p style={{color:'white', fontSize:'18px', fontWeight:'300'}}>{t('footer.subtext')}</p>
-            </div>
+          
             
             <div style={{paddingTop: '2rem', alignItems:'center'}}>
                 <LinkedinLink href='https://www.linkedin.com/in/thain%C3%A1-souza-799a85186/' target='_blank'>

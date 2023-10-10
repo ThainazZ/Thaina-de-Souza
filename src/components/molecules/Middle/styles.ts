@@ -1,6 +1,25 @@
 import styled from "styled-components";
 import '../../../styles/variables.css';
 
+export const OcupationDiv = styled.div `
+
+padding: 2% 2%;
+margin: 0% 20%;
+border: 1px solid var(--secondary-color);
+
+@media  (max-width: 640px) {
+   
+   padding: 8% 15% 8%;
+   
+ }
+ 
+ @media  (max-width: 962px) {
+   
+   padding: 5% 15%;
+ }
+`
+
+
 export const Container = styled.div `
 
 display: flex;
@@ -48,7 +67,7 @@ border-radius: 10px;
 
 export const Texts = styled.div `
 
-padding: 5% 10%;
+padding: 5% 0% 2% 0%;
 
 @media  (max-width: 640px) {
    
