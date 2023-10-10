@@ -1,0 +1,14 @@
+:root {
+
+    --primary-linear: #310a315e linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.10) 70%);
+
+    --back-color: #f8eaf833;
+
+    --primary-color: #FFFFFF;
+
+    --secondary-color: #8f378f;
+
+    --secondary-linear: linear-gradient(270deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+
+
+}
